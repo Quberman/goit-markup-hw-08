@@ -1,0 +1,235 @@
+$white-text: rgba(255, 255, 255, 1);
+$white-text01: rgba(255, 255, 255, 0.1);
+$white-text03: rgba(255, 255, 255, 0.3);
+$white-text06: rgba(255, 255, 255, 0.6);
+$black-text: rgba(33, 33, 33, 1);
+$black-border: rgba(33, 33, 33, 0.2);
+$blue-hover: rgba(33, 150, 243, 1);
+$grey-text: rgba(117, 117, 117, 1);
+$gray-text05: rgba(117, 117, 117, 0.5);
+$white-border: rgba(236, 236, 236, 1);
+$white-back: rgba(245, 244, 250, 1);
+$back-gradient: rgba(47, 48, 58, 0.4);
+$social-link: rgba(175, 177, 184, 1);
+$black-gradient08: rgba(47, 48, 58, 0.8);
+$black-gradient1: rgba(47, 48, 58, 1);
+$box-shadow06: rgba(0, 0, 0, 0.06);
+$box-shadow008: rgba(0, 0, 0, 0.08);
+$border-color: rgba(0, 0, 0, 0.1);
+$box-shadow02: rgba(0, 0, 0, 0.2);
+$modal-overlay: rgba(0, 0, 0, 0.2);
+$box-shadow012: rgba(0, 0, 0, 0.12);
+$box-shadow014: rgba(0, 0, 0, 0.14);
+$black-shadow015: rgba(0, 0, 0, 0.15);
+$black-shadow016: rgba(0, 0, 0, 0.16);
+
+.title-font-list {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.title-font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.title-font-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+
+// Hero-Block fonts
+
+.hero-block__title--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $white-text;
+}
+
+.hero-block__btn--font {
+  color: $white-text;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-decoration: none;
+}
+
+// Modal form fonts
+
+.modal-form__title--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $black-text;
+}
+
+.form-field__label--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: $grey-text;
+  text-transform: capitalize;
+}
+
+.form-policy__label--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.modal-form__button--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+}
+
+.advantages__title--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+}
+
+.services-list__text--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $white-text;
+}
+
+.team-list__text--font {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+
+.footer-address--font,
+.footer-address__link--font {
+  color: $white-text;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer-list__item--font,
+.footer-list__link--font {
+  color: $white-text06;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.soc-title--font {
+  color: $white-text;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.subscribe-line__button--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  background-color: $blue-hover;
+  box-shadow: 0px 4px 4px $black-shadow015;
+  color: $white-text;
+}
+
+.portfolio-block__title--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.btn-list--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.overlay-text__paragraph--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: $white-text;
+}
+
+.card-text-block__title--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+
+.card-text-block__paragpraph--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}

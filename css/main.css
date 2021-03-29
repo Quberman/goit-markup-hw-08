@@ -1,0 +1,998 @@
+@charset "UTF-8";
+.title-font-list {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.title-font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.title-font-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+
+.hero-block__title--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.hero-block__btn--font {
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.modal-form__title--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.form-field__label--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  text-transform: capitalize;
+}
+
+.form-policy__label--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.modal-form__button--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+}
+
+.advantages__title--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+}
+
+.services-list__text--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: white;
+}
+
+.team-list__text--font {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+
+.footer-address--font,
+.footer-address__link--font {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer-list__item--font,
+.footer-list__link--font {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  text-decoration: none;
+}
+
+.soc-title--font {
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.subscribe-line__button--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+.portfolio-block__title--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.btn-list--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.overlay-text__paragraph--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: white;
+}
+
+.card-text-block__title--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+
+.card-text-block__paragpraph--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
+
+/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+:root {
+  tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
+ monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  /* font-size: 100%; 
+  line-height: 1.15; */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+.page-header {
+  width: 100%;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .page-header {
+    max-width: 767px;
+  }
+}
+
+.menu-button {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.page-header {
+  position: relative;
+}
+
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__link {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-decoration: none;
+  padding: 16px 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__link {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.navigation__logo {
+  color: #2196f3;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.site-nav {
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.site-nav__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #212121;
+}
+
+.site-nav__link:hover, .site-nav__link:focus {
+  color: #2196f3;
+}
+
+.site-nav__link--active {
+  color: #2196f3;
+}
+
+.menu-container {
+  position: fixed;
+  max-width: 480px;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 0 0 40px;
+  top: 0;
+  left: 0;
+  background-color: white;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button-x {
+  position: absolute;
+  border: none;
+  display: flex;
+  background-color: transparent;
+  left: 91%;
+  top: 4%;
+}
+
+.contacts-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 302px 0 32px 0;
+}
+
+.contacts-list__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #757575;
+}
+
+.contacts-list__icon--mail, .contacts-list__icon--phone {
+  display: none;
+}
+
+.contacts-hover:hover,
+.contacts-hover:focus {
+  color: #2196f3;
+  fill: #2196f3;
+}
+
+.contacts-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.social-navigation {
+  display: flex;
+  padding: 0;
+}
+
+.social-navigation__link {
+  color: #2196f3;
+  padding: 0;
+}
+
+.social-navigation__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social-navigation__link--stick {
+  margin-left: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hero-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.back-settings {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #2f303a;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile-bcg.jpg");
+  height: 400px;
+  padding: 118px 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .back-settings {
+    height: 600px;
+    padding: 200px 0;
+  }
+}
+
+.hero-block__title {
+  margin: 0;
+}
+
+.hero-block__title--font {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-block__title--font {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.hero-block__btn {
+  background-color: #2196f3;
+  min-width: 200px;
+  margin-top: 30px;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 32px;
+}
+
+/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  min-width: 528px;
+  min-height: 582px;
+  background-color: white;
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  border-color: rgba(0, 0, 0, 0.1);
+  margin: 8px 8px 0 0;
+  background-color: white;
+  border-radius: 24px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal-close-btn--target:hover,
+.modal-close-btn--target:focus {
+  fill: #2196f3;
+}
+
+/* Сделал так, а не встроенными размерами для того, чтоб был элемент у блока */
+.modal-close-btn__icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Modal-Form */
+.modal-form {
+  width: 528px;
+  padding: 40px;
+}
+
+.modal-form__title {
+  margin: 0 0 12px 0;
+}
+
+/* Блок-утилита для формы */
+.form-align {
+  text-align: start;
+}
+
+.form-field {
+  margin-bottom: 10px;
+}
+
+/* Элемент-утилита для лейбла форм */
+.form-field__label {
+  margin-bottom: 4px;
+}
+
+.input-thumb {
+  position: relative;
+}
+
+.input-thumb__form {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  height: 40px;
+  width: 100%;
+  padding-left: 35px;
+  text-align: start;
+  cursor: pointer;
+}
+
+/* Элемент-утилита для иконок форм */
+.input-thumb__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: #212121;
+}
+
+.input-thumb__form:focus + .input-thumb__icon {
+  fill: #2196f3;
+}
+
+.form-field-text {
+  margin: 0;
+}
+
+.form-field,
+.form-field-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-thumb__form,
+.form-field-text__area {
+  border-radius: 4px;
+}
+
+.form-field-text__area,
+.input-thumb__form:focus-within {
+  border: 1px solid #2196f3;
+  outline-color: #2196f3;
+  border-radius: 4px;
+}
+
+.form-field-text__area {
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  height: 120px;
+  cursor: pointer;
+}
+
+.form-field-text__area::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+/* Policy */
+.form-policy {
+  margin-bottom: 30px;
+  padding-left: 12px;
+}
+
+.form-policy__label {
+  display: flex;
+  align-items: center;
+  max-width: 425px;
+  justify-content: space-between;
+  color: #757575;
+}
+
+.form-policy__input {
+  cursor: pointer;
+}
+
+.form-policy__input {
+  position: absolute;
+  appearance: none;
+}
+
+.form-policy__icon {
+  display: inline-block;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+
+.form-policy__input:checked + .form-policy__icon {
+  border: transparent;
+  border-color: #2196f3;
+  background-color: #2196f3;
+}
+
+.form-policy__link {
+  color: #2196f3;
+}
+
+/* Modal form button */
+.modal-form__button {
+  border: none;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-transform: capitalize;
+  padding: 10px 55px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.andvantages-container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .andvantages-container {
+    max-width: 480px;
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .andvantages-container {
+    max-width: 768px;
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .andvantages-container {
+    max-width: 1200px;
+    padding-top: 94px 0 0;
+  }
+}
+
+.advantages__title {
+  margin: 0 0 50px;
+}
+
+.section-list-advant {
+  text-align: center;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-list-advant {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.section-list-advant__item:not(:nth-child(4n)) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-list-advant__item {
+    width: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .section-list-advant__item:not(:nth-child(4n)) {
+    margin-bottom: unset;
+  }
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+
+.section-list-advant__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.section-list-advant__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.section-list-advant__text {
+  margin: 0px;
+  color: #757575;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+/*# sourceMappingURL=main.css.map */
