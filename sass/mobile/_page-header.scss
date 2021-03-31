@@ -10,7 +10,7 @@
 
 .menu-button {
   display: flex;
-  margin: 0;
+  margin-left: auto;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -54,34 +54,34 @@
   letter-spacing: 0.03em;
 }
 
-// .site-nav {
-//   padding: 0;
-//   margin: 0;
+.mobile-site-nav {
+  padding: 0;
+  margin: 0;
 
-//   &__item:not(:last-child) {
-//     margin-bottom: 32px;
-//   }
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
 
-//   &__link {
-//     font-family: Roboto;
-//     font-style: normal;
-//     font-weight: 500;
-//     font-size: 40px;
-//     line-height: 47px;
-//     letter-spacing: 0.02em;
-//     text-decoration: none;
-//     color: $black-text;
+  &__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $black-text;
 
-//     &:hover,
-//     &:focus {
-//       color: $blue-hover;
-//     }
+    &:hover,
+    &:focus {
+      color: $blue-hover;
+    }
 
-//     &--active {
-//       color: $blue-hover;
-//     }
-//   }
-// }
+    &--active {
+      color: $blue-hover;
+    }
+  }
+}
 
 .site-nav {
   align-items: center;
@@ -114,7 +114,7 @@
     color: $blue-hover;
   }
   @media screen and (min-width: 768px) {
-    display: none;
+    display: flex;
   }
 }
 
@@ -142,6 +142,9 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  &:focus {
+    fill: $blue-hover;
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -155,12 +158,14 @@
   background-color: transparent;
   right: 0;
   top: 0;
+  &:focus {
+    fill: $blue-hover;
+  }
 }
 
-.contacts-list {
+.mobile-contacts-list {
   padding: 0;
-  margin: 0;
-  display: none;
+  margin: 302px 0 0;
   flex-direction: column;
 
   &__link {
@@ -173,35 +178,36 @@
     text-decoration: none;
     color: $grey-text;
   }
-  &__icon--mail,
-  &__icon--phone {
-    display: none;
-  }
 }
 
-.contacts-hover:hover,
-.contacts-hover:focus {
+.mobile-contacts-hover:hover,
+.mobile-contacts-hover:focus {
   color: $blue-hover;
   fill: $blue-hover;
 }
 
-.contacts-list__item:not(:last-child) {
+.mobile-contacts-list__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.social-navigation {
+.contacts-list {
+  display: none;
+}
+
+.mobile-social-navigation {
   display: flex;
   padding: 0;
+  margin: 64px 0 0;
   &__link {
     color: $blue-hover;
     padding: 0;
   }
 }
 
-.social-navigation__item:not(:last-child) {
+.mobile-social-navigation__item:not(:last-child) {
   margin-right: 20px;
 }
 
-.social-navigation__link--stick {
+.mobile-social-navigation__link--stick {
   margin-left: 10px;
 }

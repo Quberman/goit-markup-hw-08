@@ -28,53 +28,47 @@
             
             <div id="mobile-menu" class="menu-container js-menu-container" >
               <button class="menu-button-x js-close-menu" type="button" js-close-menu>
-                <svg width="24px" height="16px">
+                <svg class="menu-button-x__svg" width="24px" height="16px">
                   <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
               </button>
               <ul class="mobile-site-nav">
-                <li class="site-nav__item">
-                  <a class="site-nav__link site-nav__link--active position" href="./index.html">Студия</a>
+                <li class="mobile-site-nav__item">
+                  <a class="mobile-site-nav__link mobile-site-nav__link--active position" href="./index.html">Студия</a>
                 </li>
-                <li class="site-nav__item">
-                  <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+                <li class="mobile-site-nav__item">
+                  <a class="mobile-site-nav__link" href="./portfolio.html">Портфолио</a>
                 </li>
-                <li class="site-nav__item">
-                  <a class="site-nav__link" href="#"> Контакты</a>
+                <li class="mobile-site-nav__item">
+                  <a class="mobile-site-nav__link" href="#"> Контакты</a>
                 </li>
               </ul>
               
               <ul class="mobile-contacts-list">
-                <li class="contacts-list__item">
-                  <a class="contacts-list__link contacts-list__link--font contacts-hover" href="mailto:info@devstudio.com">
-                    <svg width="16px" height="12px" class="contacts-list__icon--mail contacts-hover">
-                      <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                    </svg>
+                <li class="mobile-contacts-list__item">
+                  <a class="mobile-contacts-list__link mobile-contacts-list__link--font contacts-hover" href="#">
+                    +38 099 111 11 11
+                  </a>
+                <li class="mobile-contacts-list__item">
+                  <a class="mobile-contacts-list__link mobile-contacts-list__link--font contacts-hover" href="mailto:info@devstudio.com">
                     info@devstudio.com
                   </a>
                 </li>
-                <li class="contacts-list__item">
-                  <a class="contacts-list__link contacts-list__link--font contacts-hover" href="#">
-                    <svg width="10px" height="16px" class="contacts-list__icon--phone contacts-hover">
-                      <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 099 111 11 11
-                  </a>
                 </li>
               </ul>
               
               <ul class="mobile-social-navigation">
-                <li class="social-navigation__item">
-                  <a class="social-navigation__link" href="#">Instagram<span class="social-navigation__link--stick">|</span></a>
+                <li class="mobile-social-navigation__item">
+                  <a class="mobile-social-navigation__link" href="#">Instagram<span class="mobile-social-navigation__link--stick">|</span></a>
                 </li>
-                <li class="social-navigation__item">
-                  <a class="social-navigation__link" href="#">Twitter<span class="social-navigation__link--stick">|</span></a>
+                <li class="mobile-social-navigation__item">
+                  <a class="mobile-social-navigation__link" href="#">Twitter<span class="mobile-social-navigation__link--stick">|</span></a>
                 </li>
-                <li class="social-navigation__item">
-                  <a class="social-navigation__link" href="#">Facebook<span class="social-navigation__link--stick">|</span></a>
+                <li class="mobile-social-navigation__item">
+                  <a class="mobile-social-navigation__link" href="#">Facebook<span class="mobile-social-navigation__link--stick">|</span></a>
                 </li>
-                <li class="social-navigation__item">
-                  <a class="social-navigation__link" href="#">LinkedIn</a>
+                <li class="mobile-social-navigation__item">
+                  <a class="mobile-social-navigation__link" href="#">LinkedIn</a>
                 </li>
               </ul>
 
@@ -531,7 +525,7 @@
     </section>
 
     <!-- Клиенты -->
-    <!-- <section class="clients">
+    <section class="clients">
       <div class="container">
         <h2 class="clients__title centered title-font">Постоянные клиенты</h2>
         <ul class="clients-list">
@@ -579,22 +573,20 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
     <!-- Контактные данные -->
-    <!-- <footer class="bcg-section">
+    <footer class="bcg-section footer">
       <div class="container">
-        <div class="footer">
           <div class="address-container">
             <h3 class="footer__logo">
               Web<span class="footer__logo--color">Studio</span>
             </h3>
             <address class="footer-address footer-address--font">
               <p class="footer-address__text">
-                <a class="footer-address__link footer-address__link--font" href="#"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+                <a class="footer-address__link footer-address__link--font" href="#">г. Киев, пр-т Леси Украинки, 26</a>
               </p>
+              
               <ul class="footer-list">
                 <li class="footer-list__item footer-list__item--font">
                   <a class="footer-list__link footer-list__link--font" href="mailto:info@example.com"
@@ -608,35 +600,36 @@
                 </li>
               </ul>
             </address>
-          </div>
+            </div>
+        
 
           <div class="soc-link-container">
             <section class="connect-section">
               <h3 class="soc-title soc-title--font">присоединяйтесь</h3>
               <ul class="soc-link-list">
                 <li class="social-list__item">
-                  <a class="social-list__link" href="#">
+                  <a class="social-list__link social-list__link--center" href="#">
                     <svg class="social-list__icon soc-link-list--color">
                       <use href="./images/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-list__item">
-                  <a class="social-list__link" href="#">
+                  <a class="social-list__link social-list__link--center" href="#">
                     <svg class="social-list__icon soc-link-list--color">
                       <use href="./images/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-list__item">
-                  <a class="social-list__link" href="#">
+                  <a class="social-list__link social-list__link--center" href="#">
                     <svg class="social-list__icon soc-link-list--color">
                       <use href="./images/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-list__item">
-                  <a class="social-list__link" href="#">
+                  <a class="social-list__link social-list__link--center" href="#">
                     <svg class="social-list__icon soc-link-list--color">
                       <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
@@ -646,18 +639,16 @@
             </section>
           </div>
 
-          <div>
-            <form>
-              <h3 class="soc-title soc-title--font">подпишитесь на рассылку</h3>
+          <div class="subscribe">
+            <form class="subscribe__form">
+              <label class="soc-title soc-title--font" for="subscribe-input">Подпишитесь на рассылку</label>
               <div class="subscribe-line">
-                <label>
-                  <input
-                    class="subscribe-line__input"
-                    type="email"
-                    name="mail"
-                    placeholder="E-mail"
-                  />
-                </label>
+              <input
+                  class="subscribe-line__input"
+                  type="email"
+                  name="mail"
+                  placeholder="E-mail"
+                  id="subscribe-input"/>
 
                 <button class="subscribe-line__button subscribe-line__button--font" type="submit">
                   Подписаться
@@ -668,9 +659,9 @@
               </div>
             </form>
           </div>
-        </div>
+        
       </div>
-    </footer> -->
+    </footer>
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
