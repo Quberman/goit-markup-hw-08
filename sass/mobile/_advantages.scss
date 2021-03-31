@@ -1,19 +1,7 @@
-.andvantages-container {
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 100%;
-
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-    padding-top: 60px;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-    padding-top: 60px;
-  }
+.advantages {
+  padding: 60px 0 0;
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-    padding-top: 94px 0 0;
+    padding: 94px 0 0;
   }
 }
 
@@ -22,43 +10,40 @@
 }
 
 .section-list-advant {
-  text-align: center;
-  @media screen and (min-width: 768px) {
+  margin-top: calc(-1 * 20px);
+
+  @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin-left: calc(-1 * 20px);
   }
-  // display: flex;
-  //   flex-direction: row;
-  //   justify-content: flex-start;
-  margin-left: -30px;
-  margin-top: -30px;
 }
 
 .section-list-advant__item {
-  //   max-width: 270px;
-  &:not(:nth-child(4n)) {
-    margin-bottom: 30px;
-  }
+  margin-top: 20px;
+  flex-basis: calc(100% / 1 - 20px);
 
-  @media screen and (min-width: 768px) {
-    width: 354px;
-    margin-left: 30px;
-    margin-top: 30px;
-    &:not(:nth-child(4n)) {
-      margin-bottom: unset;
+  @media (max-width: 767px) {
+    &:not(:first-child) {
+      margin-top: 20px;
     }
   }
-}
 
-// .section-list-advant__item:not(:last-child) {
-//   margin: 0;
-// }
+  @media (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 20px);
+    margin-left: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 20px);
+    margin-left: 20px;
+  }
+}
 
 .icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  //   width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: $white-back;
@@ -72,6 +57,10 @@
 .section-list-advant__title {
   margin-top: 0;
   margin-bottom: 10px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 .section-list-advant__text {

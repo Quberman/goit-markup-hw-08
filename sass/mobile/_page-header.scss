@@ -8,19 +8,15 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  // .site-nav,
-  // .contacts-list {
-  //   display: none;
-  // }
-}
-
 .menu-button {
   display: flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .page-header {
@@ -58,38 +54,73 @@
   letter-spacing: 0.03em;
 }
 
+// .site-nav {
+//   padding: 0;
+//   margin: 0;
+
+//   &__item:not(:last-child) {
+//     margin-bottom: 32px;
+//   }
+
+//   &__link {
+//     font-family: Roboto;
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 40px;
+//     line-height: 47px;
+//     letter-spacing: 0.02em;
+//     text-decoration: none;
+//     color: $black-text;
+
+//     &:hover,
+//     &:focus {
+//       color: $blue-hover;
+//     }
+
+//     &--active {
+//       color: $blue-hover;
+//     }
+//   }
+// }
+
 .site-nav {
-  padding: 0;
+  align-items: center;
   margin: 0;
+  margin-left: 93px;
+  padding: 0;
+
+  display: none;
 
   &__item:not(:last-child) {
-    margin-bottom: 32px;
+    margin-right: 50px;
   }
-
   &__link {
-    font-family: Roboto;
+    display: block;
+    padding: 32px 0;
+
+    color: $black-text;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
+    font-size: 14px;
+    line-height: 16px;
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: $black-text;
-
-    &:hover,
-    &:focus {
-      color: $blue-hover;
-    }
-
-    &--active {
-      color: $blue-hover;
-    }
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $blue-hover;
+  }
+  &__link--active {
+    color: $blue-hover;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
 .menu-container {
   position: fixed;
-  max-width: 480px;
+  // max-width: 480px;
   width: 100vw;
   height: 100vh;
   padding: 48px 0 0 40px;
@@ -98,33 +129,39 @@
   background-color: $white-text;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-container.is-open {
   transform: translateX(0);
 }
 .menu-button {
-  margin: 0;
+  // margin-left: auto;
   padding: 0;
   border: none;
   background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-button-x {
   position: absolute;
   border: none;
+  padding: 24px 12px;
   display: flex;
   background-color: transparent;
-  left: 91%;
-  top: 4%;
+  right: 0;
+  top: 0;
 }
 
 .contacts-list {
   padding: 0;
   margin: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
-  margin: 302px 0 32px 0;
 
   &__link {
     font-family: Roboto;
