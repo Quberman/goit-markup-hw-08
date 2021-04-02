@@ -256,7 +256,8 @@ body {
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 /*
@@ -302,7 +303,7 @@ kbd,
 samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
- monospace;
+    monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -480,34 +481,21 @@ summary {
   padding: 0 15px;
 }
 
-@media screen and (min-width: 480px) {
-  .page-header {
-    max-width: 767px;
-  }
-}
-
-.menu-button {
+.page-header__container {
   display: flex;
-  margin-left: auto;
-  padding: 0;
-  border: none;
-  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media screen and (min-width: 768px) {
-  .menu-button {
-    display: none;
+@media screen and (min-width: 1200px) {
+  .page-header__container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
 .page-header {
   position: relative;
-}
-
-.page-header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .navigation__link {
@@ -537,6 +525,20 @@ summary {
   letter-spacing: 0.03em;
 }
 
+.menu-button {
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
 .mobile-site-nav {
   padding: 0;
   margin: 0;
@@ -557,7 +559,8 @@ summary {
   color: #212121;
 }
 
-.mobile-site-nav__link:hover, .mobile-site-nav__link:focus {
+.mobile-site-nav__link:hover,
+.mobile-site-nav__link:focus {
   color: #2196f3;
 }
 
@@ -589,7 +592,8 @@ summary {
   text-decoration: none;
 }
 
-.site-nav__link:hover, .site-nav__link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: #2196f3;
 }
 
@@ -600,6 +604,102 @@ summary {
 @media screen and (min-width: 768px) {
   .site-nav {
     display: flex;
+    align-items: center;
+    margin: 0;
+    margin-left: 93px;
+    padding: 0;
+  }
+}
+
+.position {
+  display: block;
+  position: relative;
+}
+
+.position::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 48px;
+  height: 5px;
+  bottom: 0;
+  border-radius: 2px;
+  background-color: #2196f3;
+}
+
+.contacts-list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-list {
+    display: unset;
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+  .contacts-list__item:not(:first-child) {
+    margin-top: 10px;
+  }
+  .contacts-list__icon--mail,
+  .contacts-list__icon--phone {
+    margin-right: 8px;
+    fill: currentColor;
+  }
+  .contacts-list__link {
+    display: flex;
+    align-items: center;
+    color: #757575;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+  .contacts-list__link:hover,
+  .contacts-list__link:focus {
+    color: #2196f3;
+    fill: #2196f3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+  .contacts-list__item:not(:first-child) {
+    margin: 0 0 0 30px;
+  }
+  .contacts-list__icon--mail,
+  .contacts-list__icon--phone {
+    margin-right: 8px;
+    fill: currentColor;
+  }
+  .contacts-list__link {
+    align-items: center;
+    color: #757575;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+  .contacts-list__link:hover,
+  .contacts-list__link:focus {
+    color: #2196f3;
+    fill: #2196f3;
   }
 }
 
@@ -680,10 +780,6 @@ summary {
 
 .mobile-contacts-list__item:not(:last-child) {
   margin-bottom: 32px;
-}
-
-.contacts-list {
-  display: none;
 }
 
 .mobile-social-navigation {
@@ -796,7 +892,12 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #2f303a;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile-bcg.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/mobile-bcg.jpg');
   height: 400px;
   padding: 118px 0;
   text-align: center;
@@ -1198,7 +1299,8 @@ ul {
 }
 
 .team-list__item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: white;
   margin-top: 30px;
